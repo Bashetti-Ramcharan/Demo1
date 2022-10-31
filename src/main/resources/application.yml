@@ -1,0 +1,14 @@
+app:
+  messages:
+    greetMsg: Good Morning!!
+    welcomeMsg: Welcome to Bashtti's Family!!
+#If we dont write below code only one health end point will be exposed
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    shutdown:
+      enabled: true
+#Shutdown end point we need to enable separately
